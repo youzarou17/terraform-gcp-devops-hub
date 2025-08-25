@@ -1,5 +1,6 @@
 # Resource: VPC
 resource "google_compute_network" "myvpc" {
+  project = var.project_id
   name = "${local.name}-vpc"
   auto_create_subnetworks = false   
 }
