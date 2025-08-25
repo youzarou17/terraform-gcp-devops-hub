@@ -1,5 +1,6 @@
 # Resource Block: Create a single Compute Engine instance
 resource "google_compute_instance" "myapp" {
+  project      = var.project_id
   name         = var.vminstance_name
   machine_type = var.machine_type
   zone         = var.zone

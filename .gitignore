@@ -1,0 +1,5 @@
+# Terraform local state and providers
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup

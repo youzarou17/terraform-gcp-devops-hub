@@ -7,14 +7,14 @@ terraform {
         }
     }
     backend "gcs" {
-        bucket  = "life-as-code"
+        bucket  = "lif-as-code"
         prefix  = "env/prod"
     }
 }
-
 provider "google" {
-    credentials = file("${path.module}/gcp-key.json")
-    project = var.project_id
-    region  = var.region
+   project = var.project_id
+   region  = var.region
 }
+
+
 
