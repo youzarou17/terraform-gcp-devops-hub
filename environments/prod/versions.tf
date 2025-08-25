@@ -7,7 +7,7 @@ terraform {
         }
     }
     backend "gcs" {
-        bucket  = "life-as-code"
+        bucket  = "lif-as-code"
         prefix  = "env/prod"
     }
 }
