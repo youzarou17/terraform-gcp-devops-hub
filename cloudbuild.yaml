@@ -50,5 +50,5 @@ steps:
         terraform apply -auto-approve
       else
       echo "branch ${BRANCH_NAME} does not exist"
-  options:
+options:
   logging: CLOUD_LOGGING_ONLY
