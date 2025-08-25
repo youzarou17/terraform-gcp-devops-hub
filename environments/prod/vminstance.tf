@@ -1,6 +1,6 @@
 # Module Block: Create a single Compute Engine instance
 module "myvminstance" {
-  source  = "../modules/vm-instance"
+  source  = "../../modules/vm-instance"
   vminstance_name = "${local.name}-myapp1"
   machine_type = var.machine_type
   zone = var.zone
