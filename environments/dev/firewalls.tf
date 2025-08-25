@@ -1,5 +1,6 @@
 # Firewall Rule: SSH
 resource "google_compute_firewall" "fw_ssh" {
+  project = var.project_id
   name = "${local.name}-fwrule-allow-ssh22"
   allow {
     ports    = ["22"]
@@ -14,6 +15,7 @@ resource "google_compute_firewall" "fw_ssh" {
 
 # Firewall Rule: HTTP Port 80
 resource "google_compute_firewall" "fw_http" {
+  project = var.project_id
   name = "${local.name}-fwrule-allow-http80"
   allow {
     ports    = ["80"]
