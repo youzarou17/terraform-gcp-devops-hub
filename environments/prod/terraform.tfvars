@@ -1,0 +1,6 @@
+project_id = "methodical-tea-434516-j2"
+region     = "us-central1"
+zone       = "us-central1-c"
+machine_type = "e2-micro"
+environment = "prod"
+business_division = "hr"
