@@ -1,16 +1,21 @@
 # Input Variables
 # GCP Project
-variable "gcp_project" {
-  description = "Project in which GCP Resources to be created"
-  type = string
-  default = ""
+variable "project_id" {
+  description = "The ID of the GCP project"
+  type        = string
+    default     = ""
 }
 
-# GCP Region
-variable "gcp_region" {
-  description = "Region in which GCP Resources to be created"
-  type = string
-  default = ""
+variable "region" {
+  description = "The GCP region"
+  type        = string
+  default     = ""
+}
+
+variable "zone" {
+  description = "The GCP zone"
+  type        = string
+  default     = ""
 }
 
 # GCP Compute Engine Machine Type
