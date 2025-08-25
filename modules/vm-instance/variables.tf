@@ -12,11 +12,7 @@ variable "region" {
   default     = ""
 }
 
-variable "zone" {
-  description = "The GCP zone"
-  type        = string
-  default     = ""
-}
+
 
 # GCP Compute Engine Machine Type
 variable "machine_type" {
